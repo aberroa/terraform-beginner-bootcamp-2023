@@ -207,6 +207,12 @@ This will run a plan and pass the changeset to be executed by terraform, apply s
 
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply -auto-approve`
 
+#### Terraform Destroy
+`terraform destroy`
+This will destroy the previously executed by terraform configuration on AWS, destroy should prompt us to type "yes" to destroy changes.
+
+If we want to automatically approve an destroy we can provide the auto approve flag eg. `terraform destroy -auto-approve`
+
 ### Terraform Lock Files
 
 `.terraform.lock.hcl` contains the locked versioning for the providers or modules that should be used with this project.
