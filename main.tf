@@ -9,6 +9,13 @@ terraform {
       version = "5.60.0"
     }
   }
+  cloud {
+    organization = "aberroa"
+
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
 }
 
 provider "random" {
